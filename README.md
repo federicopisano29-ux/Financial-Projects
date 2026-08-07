@@ -1,2 +1,38 @@
+The MATLAB code is provided in three formats, so it can be consulted, run, or reviewed depending on what the reader needs:
+-	`Commodities_Analysis.mlx`	
+-	`Commodities_Analysis.m`	
+- `Commodities_Analysis.pdf`	— for quick consultation without opening MATLAB.
+
 # Quantifying-Extreme-Risk-in-Commodity-Prices
 Quantifying Extreme Risk in Commodity Prices under Systemic Stress Evidence from Gold and Brent. Focused on the measurement and analysis of market and tail risk. The project combines traditional risk measures with statistical and simulation-based approaches to investigate the behavior of portfolio losses under normal and extreme market conditions.
+
+
+**Overview**
+Extreme movements in commodity prices are a first-order concern for investors, risk managers, and regulators: sharp shocks in energy and precious-metal markets can trigger inflationary pressure, destabilize budgets, and expose portfolios to losses that classical Gaussian risk models systematically underestimate.
+This project builds and validates a quantitative framework, combining GARCH-based conditional volatility filtering with Extreme Value Theory
+(EVT) — to estimate tail risk in two commodities with structurally different risk profiles: Gold (GC_F), traditionally viewed as a safe-haven asset, and Brent Crude Oil (CO_F), which is more exposed to geopolitical and supply-side shocks. The analysis uses daily data from 2000 to 2023, a window that includes the 2008 global financial crisis, the COVID-19 shock, and the onset of the
+Russia-Ukraine war.
+
+**Methodology pipeline**
+1. Data preparation — log-returns, outlier handling, stationarity (ADF).
+2. Diagnostics — ACF/PACF, Ljung-Box, ARCH-LM, Jarque-Bera, D'Agostino-Pearson, Turning Point test.
+3. AR(1)-GARCH(1,1) with Student-t innovations — conditional volatility
+4. filtering to obtain approximately i.i.d. standardized residuals.
+5. EVT-POT — threshold selection (Mean Excess plot, parameter stability, Anderson-Darling / Cramér-von Mises goodness-of-fit), GPD parameter
+estimation (MLE), VaR/CVaR at 95%, 97%, 99%.
+6. Monte Carlo backtesting — 10,000 simulations per crisis window (2008, COVID-19, Ukraine war), Kupiec unconditional coverage,
+Christoffersen conditional coverage, Clopper-Pearson confidence intervals.
+
+**Results summary**
+
+- EVT materially improves tail-risk estimation.
+- Across confidence levels (95%, 97%, 99%), observed VaR exceedance rates deviate less than 5% from theoretical expectations, and both Kupiec and Christoffersen coverage tests fail to reject correct model specification in almost every scenario tested. 
+- **Gold behaves as a partial safe haven**. Its estimated tail index (ξ ≈ 0.11–0.15) is lower than Brent's, VaR/CVaR violations are rarer than
+theoretically expected, and the model shows a mildly conservative bias, consistent with lower, more stable extreme-loss exposure.
+-** Brent shows heavier, less stable tails**. Higher estimated tail index (ξ ≈ 0.25–0.30, depending on the crisis window), larger VaR/CVaR magnitudes,
+and a higher concentration of violations during acute shock episodes (e.g. the 2008 collapse, the March–April 2020 COVID-19 sell-off), reflecting its
+greater sensitivity to supply and geopolitical shocks.
+- **The framework is robust but not adaptive**. In all three crisis windows the model recalibrates quickly after an initial cluster of violations, and no statistically significant autocorrelation in exceedances is detected.
+- However, the static threshold used in the POT step is a **known limitation**: results point to time-varying/rolling thresholds as a natural extension for faster adaptation to sudden regime changes (see thesis, §4.8 and §5). 
+- **Practical implication**: a Gaussian VaR/CVaR approach would systematically understate tail risk for both assets, and especially for Brent during acute stress — supporting the case for GARCH-EVT-based frameworks in stress-testing and capital-adequacy contexts for commodity exposures.
+
