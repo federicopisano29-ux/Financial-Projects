@@ -1,11 +1,9 @@
-The MATLAB code is provided in three formats, so it can be consulted, run, or reviewed depending on what the reader needs:
+The MATLAB code is provided in two formats, so it can be consulted, run, or reviewed depending on what the reader needs:
 -	`Commodities_Analysis.mlx`	
--	`Commodities_Analysis.m`	
 - `Commodities_Analysis.pdf`	— for quick consultation without opening MATLAB.
 
 # Quantifying-Extreme-Risk-in-Commodity-Prices
 Quantifying Extreme Risk in Commodity Prices under Systemic Stress Evidence from Gold and Brent. Focused on the measurement and analysis of market and tail risk. The project combines traditional risk measures with statistical and simulation-based approaches to investigate the behavior of portfolio losses under normal and extreme market conditions.
-
 
 **Overview**
 Extreme movements in commodity prices are a first-order concern for investors, risk managers, and regulators: sharp shocks in energy and precious-metal markets can trigger inflationary pressure, destabilize budgets, and expose portfolios to losses that classical Gaussian risk models systematically underestimate.
@@ -24,7 +22,6 @@ estimation (MLE), VaR/CVaR at 95%, 97%, 99%.
 Christoffersen conditional coverage, Clopper-Pearson confidence intervals.
 
 **Results summary**
-
 - EVT materially improves tail-risk estimation.
 - Across confidence levels (95%, 97%, 99%), observed VaR exceedance rates deviate less than 5% from theoretical expectations, and both Kupiec and Christoffersen coverage tests fail to reject correct model specification in almost every scenario tested. 
 - **Gold behaves as a partial safe haven**. Its estimated tail index (ξ ≈ 0.11–0.15) is lower than Brent's, VaR/CVaR violations are rarer than
