@@ -1,4 +1,5 @@
 **Financial Projects Portfolio**
+
 This repository brings together a collection of projects developed in the field of finance, covering different areas of financial analysis, valuation, risk management and derivatives.
 Currently, the repository includes projects focused on:
 - Corporate Valuation: Company valuation methodologies, including the analysis of RETI S.p.A. using DCF, Total Cash Flow, APV and Equity Approaches.
