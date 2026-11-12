@@ -10,17 +10,14 @@ These projects represent an ongoing effort to deepen, test and put into practice
 They are not intended to be perfect or definitive solutions. Rather, they document a learning process: experimenting with methodologies, confronting practical challenges, making mistakes and improving along the way.
 The repository will continue to evolve as new projects, ideas and areas of interest are explored.
 
+*---------------------------------------------------------------------------------------*
 
-**DETAIL**
-
-**QUANTIFYING EXTREME RISK IN COMMODITIES PRICES**
+# Quantifying-Extreme-Risk-in-Commodity-Prices
+Quantifying Extreme Risk in Commodity Prices under Systemic Stress Evidence from Gold and Brent. Focused on the measurement and analysis of market and tail risk. The project combines traditional risk measures with statistical and simulation-based approaches to investigate the behavior of portfolio losses under normal and extreme market conditions.
 
 The MATLAB code is provided in two formats, so it can be consulted, run, or reviewed depending on what the reader needs:
 -	`Commodities_Analysis.mlx`	
 - `Commodities_Analysis.pdf`	— for quick consultation without opening MATLAB.
-
-# Quantifying-Extreme-Risk-in-Commodity-Prices
-Quantifying Extreme Risk in Commodity Prices under Systemic Stress Evidence from Gold and Brent. Focused on the measurement and analysis of market and tail risk. The project combines traditional risk measures with statistical and simulation-based approaches to investigate the behavior of portfolio losses under normal and extreme market conditions.
 
 **Overview**
 Extreme movements in commodity prices are a first-order concern for investors, risk managers, and regulators: sharp shocks in energy and precious-metal markets can trigger inflationary pressure, destabilize budgets, and expose portfolios to losses that classical Gaussian risk models systematically underestimate.
@@ -50,9 +47,45 @@ greater sensitivity to supply and geopolitical shocks.
 - However, the static threshold used in the POT step is a **known limitation**: results point to time-varying/rolling thresholds as a natural extension for faster adaptation to sudden regime changes (see thesis, §4.8 and §5). 
 - **Practical implication**: a Gaussian VaR/CVaR approach would systematically understate tail risk for both assets, and especially for Brent during acute stress — supporting the case for GARCH-EVT-based frameworks in stress-testing and capital-adequacy contexts for commodity exposures.
 
+*---------------------------------------------------------------------------------------*
 
 **COMPANY VALUATION**
 
-Example of RETI SPA.
+Example of RETI S.p.A. 
 
+**Project Overview**
+This project focuses on the valuation of RETI S.p.A., applying multiple financial valuation methodologies to estimate the company's intrinsic value and assess its financial and economic profile.
+The analysis combines cash flow-based valuation approaches, capital structure considerations and equity valuation techniques, with the objective of comparing different valuation perspectives and understanding how financing decisions influence enterprise and equity value.
 
+**Valuation Methodologies**
+The financial model incorporates the following approaches:
+- Discounted Cash Flow (DCF): valuation based on projected Free Cash Flow to the Firm (FCFF), discounted using the Weighted Average Cost of Capital (WACC).
+- Total Cash Flow (TCF): valuation through the analysis and discounting of total cash flows generated for debt and equity capital providers.
+- Adjusted Present Value (APV): separation of the operating value of the business from the financial effects of leverage, including the value of interest tax shields.
+- Equity Approach (FCFE): direct estimation of equity value by discounting Free Cash Flow to Equity at the Cost of Equity (Ke).
+
+**Key Areas of Analysis**
+The project includes:
+- Historical financial statement analysis.
+- Revenue, operating performance and profitability assessment.
+- Forecasting of financial statements and operating cash flows.
+- Estimation of WACC and Cost of Equity.
+- Capital structure and financial leverage analysis.
+- Terminal Value estimation.
+- Net Debt and Enterprise Value reconciliation.
+- Equity Value determination.
+- Comparison of valuation results across different methodologies.
+
+**Objective**
+The primary objective is to develop an integrated valuation framework, comparing alternative methodologies and examining the impact of operating assumptions, financial leverage, discount rates and long-term growth expectations on the estimated company value.
+The project also aims to demonstrate the practical application of corporate finance theory to a real-world listed company.
+
+**Tools & Technologies**
+- Microsoft Excel
+- Financial Modelling
+- Corporate Finance
+- Business Valuation
+- Discounted Cash Flow Analysis
+
+**Disclaimer**
+This project has been developed for educational and analytical purposes. The valuation estimates are based on financial information, assumptions and projections used in the model and should not be interpreted as investment recommendations.
