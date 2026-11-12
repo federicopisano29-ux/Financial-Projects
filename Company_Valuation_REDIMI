@@ -1,0 +1,38 @@
+RETI S.p.A. – Corporate Valuation
+
+**Project Overview**
+This project focuses on the valuation of RETI S.p.A., applying multiple financial valuation methodologies to estimate the company's intrinsic value and assess its financial and economic profile.
+The analysis combines cash flow-based valuation approaches, capital structure considerations and equity valuation techniques, with the objective of comparing different valuation perspectives and understanding how financing decisions influence enterprise and equity value.
+
+**Valuation Methodologies**
+The financial model incorporates the following approaches:
+- Discounted Cash Flow (DCF): valuation based on projected Free Cash Flow to the Firm (FCFF), discounted using the Weighted Average Cost of Capital (WACC).
+- Total Cash Flow (TCF): valuation through the analysis and discounting of total cash flows generated for debt and equity capital providers.
+- Adjusted Present Value (APV): separation of the operating value of the business from the financial effects of leverage, including the value of interest tax shields.
+- Equity Approach (FCFE): direct estimation of equity value by discounting Free Cash Flow to Equity at the Cost of Equity (Ke).
+
+**Key Areas of Analysis**
+The project includes:
+- Historical financial statement analysis.
+- Revenue, operating performance and profitability assessment.
+- Forecasting of financial statements and operating cash flows.
+- Estimation of WACC and Cost of Equity.
+- Capital structure and financial leverage analysis.
+- Terminal Value estimation.
+- Net Debt and Enterprise Value reconciliation.
+- Equity Value determination.
+- Comparison of valuation results across different methodologies.
+
+**Objective**
+The primary objective is to develop an integrated valuation framework, comparing alternative methodologies and examining the impact of operating assumptions, financial leverage, discount rates and long-term growth expectations on the estimated company value.
+The project also aims to demonstrate the practical application of corporate finance theory to a real-world listed company.
+
+**Tools & Technologies**
+- Microsoft Excel
+- Financial Modelling
+- Corporate Finance
+- Business Valuation
+- Discounted Cash Flow Analysis
+
+**Disclaimer**
+This project has been developed for educational and analytical purposes. The valuation estimates are based on financial information, assumptions and projections used in the model and should not be interpreted as investment recommendations.
