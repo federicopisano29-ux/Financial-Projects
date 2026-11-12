@@ -1,4 +1,4 @@
-**Financial Projects Portfolio**
+# Financial Projects Portfolio
 
 This repository brings together a collection of projects developed in the field of finance, covering different areas of financial analysis, valuation, risk management and derivatives.
 Currently, the repository includes projects focused on:
@@ -49,9 +49,9 @@ greater sensitivity to supply and geopolitical shocks.
 
 *---------------------------------------------------------------------------------------*
 
-**COMPANY VALUATION**
+# COMPANY VALUATION
 
-Example of RETI S.p.A. 
+**Example of RETI S.p.A.** 
 
 **Project Overview**
 This project focuses on the valuation of RETI S.p.A., applying multiple financial valuation methodologies to estimate the company's intrinsic value and assess its financial and economic profile.
